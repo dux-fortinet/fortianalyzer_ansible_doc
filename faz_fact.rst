@@ -98,7 +98,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fwmsetting_upgradetimeout</span> - available versions:
-              <span class="li-normal">7.0.5-7.0.11, >= 7.2.2</span>
+              <span class="li-normal">7.0.5-7.0.12, >= 7.2.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_multilayer</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -272,7 +272,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_guiact</span> - available versions:
-              <span class="li-normal">6.2.1-7.4.0</span>
+              <span class="li-normal">6.2.1-7.0.11, 7.2.0-7.2.4, 7.4.0-7.4.0</span>
               </li>
               <li><span class="li-required">cli_system_ha</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -649,9 +649,6 @@ Parameters
               <li><span class="li-required">logview_pcapfile</span> - available versions:
               <span class="li-normal">>= 7.0.3</span>
               </li>
-              <li><span class="li-required">report_adom_root_template_language</span> - available versions:
-              <span class="li-normal">>= 6.2.1</span>
-              </li>
               <li><span class="li-required">report_graphfile</span> - available versions:
               <span class="li-normal">>= 7.2.2</span>
               </li>
@@ -671,6 +668,9 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_template_export</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
+              </li>
+              <li><span class="li-required">report_template_language</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_template_list</span> - available versions:
@@ -725,7 +725,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ueba_endpoints_vuln</span> - available versions:
-              <span class="li-normal">>= 7.4.1</span>
+              <span class="li-normal">>= 7.4.0</span>
               </li>
               <li><span class="li-required">ueba_endusers</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -739,8 +739,7 @@ Parameters
           </ul>
         </div>
       </section>
-
-      <li><span class="li-head">params</span> - The parameter for each selector <span class="li-normal">type: dict</span> <span class="li-required">choices:</span></li>
+      <li><span class="li-head">params</span> - The parameter for each selector. You can also add any API specified parameters (E.g., some "get" JSON APIs support "loadsub", "meta field", "range"...). <span class="li-normal">type: dict</span> <span class="li-required">choices:</span></li>
       <li style="list-style: none;">
       <section class="accordion">
         <input type="checkbox" name="collapse" id="handle3">
@@ -1483,9 +1482,6 @@ Parameters
             <li><span class="li-normal">params for logview_pcapfile:</span></li>
             <ul class="ul-self">
             </ul>
-            <li><span class="li-normal">params for report_adom_root_template_language:</span></li>
-            <ul class="ul-self">
-            </ul>
             <li><span class="li-normal">params for report_graphfile:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
@@ -1513,6 +1509,10 @@ Parameters
                 <li><span class="li-normal">tid</span></li>
             </ul>
             <li><span class="li-normal">params for report_template_export:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
+            <li><span class="li-normal">params for report_template_language:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
             </ul>
@@ -1607,8 +1607,6 @@ Parameters
         </ul>
         </div>
       </section>
-
-      <li><span class="li-head">extra_params</span> Extra parameters. <span class="li-normal">type: dict</span> <span class="li-required">required: false</span></li>
     </ul>
   </ul>
 

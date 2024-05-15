@@ -121,7 +121,7 @@ Parameters
         <li><span class="li-normal">params for cli_system_admin_profile_writepasswduserlist:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>profile</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>userid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_admin_profile_writepasswduserlist.html#parameters">faz_cli_system_admin_profile_writepasswduserlist</a> </span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_admin_radius:</span></li>

@@ -508,17 +508,65 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_chart.html#parameters">faz_report_config_chart</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_chart_drilldowntable:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>table_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_chart_drilldowntable.html#parameters">faz_report_config_chart_drilldowntable</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_chart_tablecolumns:</span></li>
         <ul class="ul-self">
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_chart_tablecolumns.html#parameters">faz_report_config_chart_tablecolumns</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_chart_variabletemplate:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>var</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_chart_variabletemplate.html#parameters">faz_report_config_chart_variabletemplate</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_dataset:</span></li>
         <ul class="ul-self">
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_dataset.html#parameters">faz_report_config_dataset</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>layout_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_layout.html#parameters">faz_report_config_layout</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_component:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>component_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_layout_component.html#parameters">faz_report_config_layout_component</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_component_variable:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>var</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_layout_component_variable.html#parameters">faz_report_config_layout_component_variable</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_footer:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>footer_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_layout_footer.html#parameters">faz_report_config_layout_footer</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_header:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>header_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_layout_header.html#parameters">faz_report_config_layout_header</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layoutfolder:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>folder_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_layoutfolder.html#parameters">faz_report_config_layoutfolder</a> </span></li>
         </ul>
         <li><span class="li-normal">params for report_config_macro:</span></li>
         <ul class="ul-self">
@@ -532,6 +580,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_output.html#parameters">faz_report_config_output</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_output_emailrecipients:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>address</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_output_emailrecipients.html#parameters">faz_report_config_output_emailrecipients</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_schedule:</span></li>
         <ul class="ul-self">
             
@@ -544,11 +598,23 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_schedule_addressfilter.html#parameters">faz_report_config_schedule_addressfilter</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_schedule_devices:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>devices_name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_schedule_devices.html#parameters">faz_report_config_schedule_devices</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_schedule_filter:</span></li>
         <ul class="ul-self">
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_schedule_filter.html#parameters">faz_report_config_schedule_filter</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_schedule_reportlayout:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>layout_id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_schedule_reportlayout.html#parameters">faz_report_config_schedule_reportlayout</a> </span></li>
         </ul>
     </ul>
     </div>
@@ -790,10 +856,34 @@ Parameters
         <li><span class="li-required">report_config_chart</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
+        <li><span class="li-required">report_config_chart_drilldowntable</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
         <li><span class="li-required">report_config_chart_tablecolumns</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
+        <li><span class="li-required">report_config_chart_variabletemplate</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
         <li><span class="li-required">report_config_dataset</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_layout</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_layout_component</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_layout_component_variable</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_layout_footer</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_layout_header</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_layoutfolder</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">report_config_macro</span> - available versions:
@@ -802,13 +892,22 @@ Parameters
         <li><span class="li-required">report_config_output</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
+        <li><span class="li-required">report_config_output_emailrecipients</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
         <li><span class="li-required">report_config_schedule</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">report_config_schedule_addressfilter</span> - available versions:
             <span class="li-normal">>= 6.4.3</span>
         </li>
+        <li><span class="li-required">report_config_schedule_devices</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
         <li><span class="li-required">report_config_schedule_filter</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_schedule_reportlayout</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
     </ul>
@@ -1155,16 +1254,63 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">chart</span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_chart_drilldowntable:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">chart_name</span></li>
+            <li><span class="li-normal">drill-down-table</span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_chart_tablecolumns:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">chart_name</span></li>
             <li><span class="li-normal">table-columns</span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_chart_variabletemplate:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">chart_name</span></li>
+            <li><span class="li-normal">variable-template</span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_dataset:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataset</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">layout</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_component:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">component</span></li>
+            <li><span class="li-normal">layout-id</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_component_variable:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">component-id</span></li>
+            <li><span class="li-normal">layout-id</span></li>
+            <li><span class="li-normal">variable</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_footer:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">footer</span></li>
+            <li><span class="li-normal">layout-id</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layout_header:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">header</span></li>
+            <li><span class="li-normal">layout-id</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_layoutfolder:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">layout-folder</span></li>
         </ul>
         <li><span class="li-normal">params for report_config_macro:</span></li>
         <ul class="ul-self">
@@ -1175,6 +1321,12 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">output</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_output_emailrecipients:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">email-recipients</span></li>
+            <li><span class="li-normal">output-name</span></li>
         </ul>
         <li><span class="li-normal">params for report_config_schedule:</span></li>
         <ul class="ul-self">
@@ -1187,10 +1339,22 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">schedule_name</span></li>
         </ul>
+        <li><span class="li-normal">params for report_config_schedule_devices:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">devices</span></li>
+            <li><span class="li-normal">schedule_name</span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_schedule_filter:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">filter</span></li>
+            <li><span class="li-normal">schedule_name</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_schedule_reportlayout:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">report-layout</span></li>
             <li><span class="li-normal">schedule_name</span></li>
         </ul>
     </ul>

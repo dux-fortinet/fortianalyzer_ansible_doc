@@ -77,14 +77,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">opcode</span> - No description for the parameter <span class="li-normal">type: str</span>  </li>
- <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">opcode</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [not_equal, equal]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> - No description for the parameter <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
+ <li><span class="li-head">value</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
  </div>
  </li>
@@ -125,7 +129,7 @@ Examples
           report_config_schedule_filter:
             description: <value of string>
             name: <value of string>
-            opcode: <value of string>
+            opcode: <value in [not_equal, equal]>
             status: <value of integer>
             value: <value of string>
   

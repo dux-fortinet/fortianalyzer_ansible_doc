@@ -45,6 +45,7 @@ Parameters
   <li><span class="li-head">method</span> - The method of API request, grouped with parameter params. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal">choices: [add, set, update, get, delete, exec, move, clone]</span>  </li>
   <li><span class="li-head">params</span> - The parameter body of API request, grouped with parameter method. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
   <li><span class="li-head">json</span> - The raw json formatted string, it must contain method and params.<span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">jsonrpc</span> - Some APIs may require jsonrpc set as 2.0 (such as fortiview, report, etc.)<span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
   </ul>
 
 

@@ -69,19 +69,25 @@ Parameters
  </div>
  </li>
  <li><span class="li-head">payload</span> - No description for the parameter <span class="li-normal">type: dict</span>
- </li>
- <li><span class="li-head">resource</span> - URL on the remote device to be accessed. <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: list</span> <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <ul class="ul-self">
+ </ul>
+ <li><span class="li-head">resource</span> - URL on the remote device to be accessed. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">timeout</span> - Maximum time in seconds to wait for response from remote device.  If no response recieved from remote device before timeout expires, the proxy will return with error.  If the proxy request is sent to multiple devices, it will not affect the response for other devices that already returned a result.  Valid range: 10 to 28800. <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">target</span> - No description for the parameter <span class="li-normal">type: list</span> <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">timeout</span> - Maximum time in seconds to wait for response from remote device.  If no response recieved from remote device before timeout expires, the proxy will return with error.  If the proxy request is sent to multiple devices, it will not affect the response for other devices that already returned a result.  Valid range: 10 to 28800. <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>

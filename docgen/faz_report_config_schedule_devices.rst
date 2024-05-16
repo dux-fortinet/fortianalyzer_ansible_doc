@@ -78,6 +78,11 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  <ul class="ul-self">
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
  </ul>
@@ -115,7 +120,9 @@ Examples
           state: <value in [present, absent]>
           report_config_schedule_devices:
             devices_name: <value of string>
-            interfaces: <value of dict>
+            interfaces:
+              -
+                name: <value of string>
   
 
 

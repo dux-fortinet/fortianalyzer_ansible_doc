@@ -1244,7 +1244,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_chart_drilldowntable.html">faz_report_config_chart_drilldowntable</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">chart_name</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">table_id</span></code></td>
   <td>/report/adom/{adom}/config/chart/{chart_name}/drill-down-table<br>/report/adom/{adom}/config/chart/{chart_name}/drill-down-table/{drill-down-table}</td>
   </tr>
   <tr class="row-even">
@@ -1258,7 +1258,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_chart_variabletemplate.html">faz_report_config_chart_variabletemplate</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">chart_name</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">var</span></code></td>
   <td>/report/adom/{adom}/config/chart/{chart_name}/variable-template<br>/report/adom/{adom}/config/chart/{chart_name}/variable-template/{variable-template}</td>
   </tr>
   <tr class="row-even">
@@ -1279,42 +1279,42 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_layout.html">faz_report_config_layout</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">layout_id</span></code></td>
   <td>/report/adom/{adom}/config/layout<br>/report/adom/{adom}/config/layout/{layout}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_report_config_layout_component.html">faz_report_config_layout_component</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">component_id</span></code></td>
   <td>/report/adom/{adom}/config/layout/{layout-id}/component<br>/report/adom/{adom}/config/layout/{layout-id}/component/{component}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_report_config_layout_component_variable.html">faz_report_config_layout_component_variable</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">component-id</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">var</span></code></td>
   <td>/report/adom/{adom}/config/layout/{layout-id}/component/{component-id}/variable<br>/report/adom/{adom}/config/layout/{layout-id}/component/{component-id}/variable/{variable}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_report_config_layout_footer.html">faz_report_config_layout_footer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">footer_id</span></code></td>
   <td>/report/adom/{adom}/config/layout/{layout-id}/footer<br>/report/adom/{adom}/config/layout/{layout-id}/footer/{footer}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_report_config_layout_header.html">faz_report_config_layout_header</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">header_id</span></code></td>
   <td>/report/adom/{adom}/config/layout/{layout-id}/header<br>/report/adom/{adom}/config/layout/{layout-id}/header/{header}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_report_config_layoutfolder.html">faz_report_config_layoutfolder</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">folder_id</span></code></td>
   <td>/report/adom/{adom}/config/layout-folder<br>/report/adom/{adom}/config/layout-folder/{layout-folder}</td>
   </tr>
   <tr class="row-even">
@@ -1335,7 +1335,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_output_emailrecipients.html">faz_report_config_output_emailrecipients</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">output-name</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">address</span></code></td>
   <td>/report/adom/{adom}/config/output/{output-name}/email-recipients<br>/report/adom/{adom}/config/output/{output-name}/email-recipients/{email-recipients}</td>
   </tr>
   <tr class="row-odd">
@@ -1356,7 +1356,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_schedule_devices.html">faz_report_config_schedule_devices</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">schedule_name</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">devices_name</span></code></td>
   <td>/report/adom/{adom}/config/schedule/{schedule_name}/devices<br>/report/adom/{adom}/config/schedule/{schedule_name}/devices/{devices}</td>
   </tr>
   <tr class="row-even">
@@ -1370,7 +1370,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_schedule_reportlayout.html">faz_report_config_schedule_reportlayout</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">schedule_name</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">layout_id</span></code></td>
   <td>/report/adom/{adom}/config/schedule/{schedule_name}/report-layout<br>/report/adom/{adom}/config/schedule/{schedule_name}/report-layout/{report-layout}</td>
   </tr>
   <tr class="row-even">

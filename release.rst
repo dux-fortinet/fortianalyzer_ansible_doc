@@ -14,6 +14,7 @@ Minor Changes
 
 - Added report serial modules.
 - Supported FortiAnalyzer 7.0.12, 7.2.5.
+- Added parameter version_check. If set to True, it will check whether the parameters used are supported by the corresponding version of FortiAnazlyer.
 
 Bugfixes
 --------

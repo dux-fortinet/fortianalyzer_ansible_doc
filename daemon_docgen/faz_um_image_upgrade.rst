@@ -161,8 +161,7 @@ Examples
             adom: <value of string>
             create_task: <value of string>
             device:
-              -
-                name: <value of string>
+              - name: <value of string>
                 vdom: <value of string>
             flags: <value in [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, ...]>
             image:

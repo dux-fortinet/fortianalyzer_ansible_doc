@@ -119,8 +119,7 @@ Examples
           report_config_schedule_devices:
             devices_name: <value of string>
             interfaces:
-              -
-                name: <value of string>
+              - name: <value of string>
   
 
 

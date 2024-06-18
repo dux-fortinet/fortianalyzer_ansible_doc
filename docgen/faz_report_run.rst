@@ -195,8 +195,7 @@ Examples
               device: <value of string>
               display_table_contents: <value in [0, 1]>
               filter:
-                -
-                  name: <value of string>
+                - name: <value of string>
                   opcode: <value in [0, 1]>
                   value: <value of string>
               filter_logic: <value in [all, any]>

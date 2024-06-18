@@ -271,8 +271,7 @@ Examples
             downstream_access: <value in [disable, enable]>
             downstream_accprofile: <value of string>
             fabric_connector:
-              -
-                accprofile: <value of string>
+              - accprofile: <value of string>
                 configuration_write_access: <value in [disable, enable]>
                 serial: <value of string>
             fabric_object_unification: <value in [local, default]>
@@ -288,8 +287,7 @@ Examples
             saml_configuration_sync: <value in [local, default]>
             status: <value in [disable, enable]>
             trusted_list:
-              -
-                action: <value in [accept, deny]>
+              - action: <value in [accept, deny]>
                 authorization_type: <value in [serial, certificate]>
                 certificate: <value of string>
                 downstream_authorization: <value in [disable, enable]>

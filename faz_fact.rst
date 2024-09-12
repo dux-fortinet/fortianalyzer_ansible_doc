@@ -40,6 +40,7 @@ Parameters
     <li><span class="li-head">enable_log</span> Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-normal"> default: False</span> </li>
     <li><span class="li-head">forticloud_access_token</span> Access token of forticloud analyzer API users. <span class="li-normal">type: str</span> </li>
     <li><span class="li-head">log_path</span> The path to save log. Used if enable_log is true. Please use absolute path instead of relative path. If the log_path setting is incorrect, the log will be saved in /tmp/fortianalyzer.ansible.log<span class="li-normal">type: str</span> <span class="li-normal"> default: "/tmp/fortianalyzer.ansible.log"</span> </li>
+    <li><span class="li-head">version_check</span> If set to True, it will check whether the parameters used are supported by the corresponding version of FortiAnazlyer locally based on FNDN data. A warning will be returned in version_check_warning if there is a mismatch. This warning is only a suggestion and may not be accurate. <span class="li-normal">type: bool</span> <span class="li-normal"> default: True</span> </li>
     <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
     <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
     <li><span class="li-head">facts</span> Gathering fortianalyzer facts. <span class="li-normal">type: dict</span></li>
@@ -183,6 +184,9 @@ Parameters
               </li>
               <li><span class="li-required">cli_system_admin_user_metadata</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
+              </li>
+              <li><span class="li-required">cli_system_admin_user_policyblock</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_policypackage</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -530,10 +534,10 @@ Parameters
               <span class="li-normal">6.4.8-6.4.14, >= 7.0.3</span>
               </li>
               <li><span class="li-required">cli_system_workflow_approvalmatrix</span> - available versions:
-              <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2</span>
+              <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
               </li>
               <li><span class="li-required">cli_system_workflow_approvalmatrix_approver</span> - available versions:
-              <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2</span>
+              <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
               </li>
               <li><span class="li-required">dvmdb_adom</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -555,6 +559,9 @@ Parameters
               </li>
               <li><span class="li-required">eventmgmt_alertfilter</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
+              </li>
+              <li><span class="li-required">eventmgmt_alertincident_stats</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
               </li>
               <li><span class="li-required">eventmgmt_alertlogs</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -598,8 +605,20 @@ Parameters
               <li><span class="li-required">fazsys_language_translationfile_list</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
               </li>
+              <li><span class="li-required">fazsys_lograte_history</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
               <li><span class="li-required">fazsys_monitor_logforwardstatus</span> - available versions:
               <span class="li-normal">>= 7.2.2</span>
+              </li>
+              <li><span class="li-required">fazsys_monitor_system_performance_status</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
+              <li><span class="li-required">fazsys_storageinfo</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
+              <li><span class="li-required">fazsys_storageinfohistory</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
               </li>
               <li><span class="li-required">fortiview_run</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -612,6 +631,9 @@ Parameters
               </li>
               <li><span class="li-required">incidentmgmt_epeuhistory</span> - available versions:
               <span class="li-normal">>= 6.4.2</span>
+              </li>
+              <li><span class="li-required">incidentmgmt_incident_stats</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
               </li>
               <li><span class="li-required">incidentmgmt_incidents</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -739,6 +761,9 @@ Parameters
               <li><span class="li-required">report_template_list</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
               </li>
+              <li><span class="li-required">soar_alert_indicator</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
               <li><span class="li-required">soar_config_connectors</span> - available versions:
               <span class="li-normal">>= 6.4.2</span>
               </li>
@@ -748,20 +773,32 @@ Parameters
               <li><span class="li-required">soar_fosconnector_automationrules</span> - available versions:
               <span class="li-normal">>= 6.4.2</span>
               </li>
+              <li><span class="li-required">soar_incident_indicator</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
+              <li><span class="li-required">soar_indicator</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
+              <li><span class="li-required">soar_indicator_enrichment</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
+              </li>
               <li><span class="li-required">soar_playbook_export</span> - available versions:
               <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_playbook_monitor</span> - available versions:
-              <span class="li-normal">6.4.2-7.2.1</span>
+              <span class="li-normal">6.4.2-7.2.1, >= 7.6.0</span>
               </li>
               <li><span class="li-required">soar_playbook_run</span> - available versions:
               <span class="li-normal">>= 6.4.2</span>
+              </li>
+              <li><span class="li-required">soar_playbook_runlog</span> - available versions:
+              <span class="li-normal">>= 7.6.0</span>
               </li>
               <li><span class="li-required">soar_subnet_export</span> - available versions:
               <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_task_monitor</span> - available versions:
-              <span class="li-normal">>= 6.4.2</span>
+              <span class="li-normal">6.4.2-7.4.3</span>
               </li>
               <li><span class="li-required">sys_ha_status</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -966,6 +1003,11 @@ Parameters
             <li><span class="li-normal">params for cli_system_admin_user_metadata:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">meta-data</span></li>
+                <li><span class="li-normal">user</span></li>
+            </ul>
+            <li><span class="li-normal">params for cli_system_admin_user_policyblock:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">policy-block</span></li>
                 <li><span class="li-normal">user</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_policypackage:</span></li>
@@ -1423,6 +1465,10 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
             </ul>
+            <li><span class="li-normal">params for eventmgmt_alertincident_stats:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
             <li><span class="li-normal">params for eventmgmt_alertlogs:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
@@ -1475,8 +1521,22 @@ Parameters
             <li><span class="li-normal">params for fazsys_language_translationfile_list:</span></li>
             <ul class="ul-self">
             </ul>
+            <li><span class="li-normal">params for fazsys_lograte_history:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
             <li><span class="li-normal">params for fazsys_monitor_logforwardstatus:</span></li>
             <ul class="ul-self">
+            </ul>
+            <li><span class="li-normal">params for fazsys_monitor_system_performance_status:</span></li>
+            <ul class="ul-self">
+            </ul>
+            <li><span class="li-normal">params for fazsys_storageinfo:</span></li>
+            <ul class="ul-self">
+            </ul>
+            <li><span class="li-normal">params for fazsys_storageinfohistory:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
             </ul>
             <li><span class="li-normal">params for fortiview_run:</span></li>
             <ul class="ul-self">
@@ -1493,6 +1553,10 @@ Parameters
                 <li><span class="li-normal">adom</span></li>
             </ul>
             <li><span class="li-normal">params for incidentmgmt_epeuhistory:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
+            <li><span class="li-normal">params for incidentmgmt_incident_stats:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
             </ul>
@@ -1680,6 +1744,10 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
             </ul>
+            <li><span class="li-normal">params for soar_alert_indicator:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
             <li><span class="li-normal">params for soar_config_connectors:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
@@ -1694,6 +1762,19 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
             </ul>
+            <li><span class="li-normal">params for soar_incident_indicator:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
+            <li><span class="li-normal">params for soar_indicator:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
+            <li><span class="li-normal">params for soar_indicator_enrichment:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">enrichment_uuid</span></li>
+            </ul>
             <li><span class="li-normal">params for soar_playbook_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
@@ -1705,6 +1786,11 @@ Parameters
             <li><span class="li-normal">params for soar_playbook_run:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+            </ul>
+            <li><span class="li-normal">params for soar_playbook_runlog:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">run-id</span></li>
             </ul>
             <li><span class="li-normal">params for soar_subnet_export:</span></li>
             <ul class="ul-self">

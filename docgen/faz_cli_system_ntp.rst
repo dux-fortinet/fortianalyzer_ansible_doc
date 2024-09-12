@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode and diff mode.
 
 Requirements
 ------------
@@ -146,6 +146,7 @@ Examples
           cli_system_ntp:
             status: disable
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

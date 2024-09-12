@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode.
 
 Requirements
 ------------
@@ -148,9 +148,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: The older API for updating the firmware of specific device.
         fortinet.fortianalyzer.faz_um_image_upgrade:

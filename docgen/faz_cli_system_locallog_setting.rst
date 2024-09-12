@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode and diff mode.
 
 Requirements
 ------------
@@ -85,7 +85,7 @@ Parameters
  </li>
  <li><span class="li-head">no_log_detection_threshold</span> Time interval in minutes to trigger a local event message if no log data is received. <span class="li-normal">type: int</span>  <span class="li-normal">default: 15</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.7</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_interval_adom_perf_stats</span> Interval in minute for logging the event of adom perf stats. <span class="li-normal">type: int</span>  <span class="li-normal">default: 60</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
@@ -120,6 +120,7 @@ Examples
             log_interval_disk_full: 5
             log_interval_gbday_exceeded: 1440
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

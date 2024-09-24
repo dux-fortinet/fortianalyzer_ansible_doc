@@ -173,6 +173,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>fieldname</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_admin_user_metadata.html#parameters">faz_cli_system_admin_user_metadata</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for cli_system_admin_user_policyblock:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>policy_block_name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_admin_user_policyblock.html#parameters">faz_cli_system_admin_user_policyblock</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for cli_system_admin_user_policypackage:</span></li>
         <ul class="ul-self">
             
@@ -479,6 +485,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>adom-name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_workflow_approvalmatrix.html#parameters">faz_cli_system_workflow_approvalmatrix</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for cli_system_workflow_approvalmatrix_approver:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>seq_num</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_workflow_approvalmatrix_approver.html#parameters">faz_cli_system_workflow_approvalmatrix_approver</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for dvmdb_adom:</span></li>
         <ul class="ul-self">
             
@@ -532,6 +544,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_dataset.html#parameters">faz_report_config_dataset</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_dataset_variable:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>var</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_dataset_variable.html#parameters">faz_report_config_dataset_variable</a> </span></li>
         </ul>
         <li><span class="li-normal">params for report_config_layout:</span></li>
         <ul class="ul-self">
@@ -689,6 +707,9 @@ Parameters
         <li><span class="li-required">cli_system_admin_user_metadata</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
+        <li><span class="li-required">cli_system_admin_user_policyblock</span> - available versions:
+            <span class="li-normal">>= 7.6.0</span>
+        </li>
         <li><span class="li-required">cli_system_admin_user_policypackage</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
@@ -842,6 +863,9 @@ Parameters
         <li><span class="li-required">cli_system_workflow_approvalmatrix</span> - available versions:
             <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
         </li>
+        <li><span class="li-required">cli_system_workflow_approvalmatrix_approver</span> - available versions:
+            <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
+        </li>
         <li><span class="li-required">dvmdb_adom</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
@@ -867,6 +891,9 @@ Parameters
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">report_config_dataset</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_dataset_variable</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">report_config_layout</span> - available versions:
@@ -1011,6 +1038,11 @@ Parameters
         <li><span class="li-normal">params for cli_system_admin_user_metadata:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">meta-data</span></li>
+            <li><span class="li-normal">user</span></li>
+        </ul>
+        <li><span class="li-normal">params for cli_system_admin_user_policyblock:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">policy-block</span></li>
             <li><span class="li-normal">user</span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_admin_user_policypackage:</span></li>
@@ -1230,6 +1262,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">approval-matrix</span></li>
         </ul>
+        <li><span class="li-normal">params for cli_system_workflow_approvalmatrix_approver:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">approval-matrix</span></li>
+            <li><span class="li-normal">approver</span></li>
+        </ul>
         <li><span class="li-normal">params for dvmdb_adom:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -1277,6 +1314,12 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataset</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_dataset_variable:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">dataset_name</span></li>
+            <li><span class="li-normal">variable</span></li>
         </ul>
         <li><span class="li-normal">params for report_config_layout:</span></li>
         <ul class="ul-self">

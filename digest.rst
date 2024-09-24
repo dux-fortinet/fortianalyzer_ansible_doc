@@ -341,7 +341,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_policyblock.html">faz_cli_system_admin_user_policyblock</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">policy_block_name</span></code></td>
   <td>/cli/global/system/admin/user/{user}/policy-block<br>/cli/global/system/admin/user/{user}/policy-block/{policy-block}</td>
   </tr>
   <tr class="row-odd">
@@ -1146,7 +1146,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_workflow_approvalmatrix_approver.html">faz_cli_system_workflow_approvalmatrix_approver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">approval-matrix</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">seq_num</span></code></td>
   <td>/cli/global/system/workflow/approval-matrix/{approval-matrix}/approver<br>/cli/global/system/workflow/approval-matrix/{approval-matrix}/approver/{approver}</td>
   </tr>
   <tr class="row-even">
@@ -1286,7 +1286,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_report_config_dataset_variable.html">faz_report_config_dataset_variable</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">dataset_name</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">var</span></code></td>
   <td>/report/adom/{adom}/config/dataset/{dataset_name}/variable<br>/report/adom/{adom}/config/dataset/{dataset_name}/variable/{variable}</td>
   </tr>
   <tr class="row-even">

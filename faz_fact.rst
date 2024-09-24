@@ -839,7 +839,7 @@ Parameters
           </ul>
         </div>
       </section>
-      <li><span class="li-head">params</span> The parameter for each selector. You can also add any API specified parameters (E.g., some "get" JSON APIs support "loadsub", "meta field", "range"...). <span class="li-normal">type: dict</span> <span class="li-required">choices:</span></li>
+      <li><span class="li-head">params</span> The parameter for each selector. E.g., some "get" JSON APIs support "loadsub", "meta field", "range"... <span class="li-normal">type: dict</span> <span class="li-required">choices:</span></li>
       <li style="list-style: none;">
       <section class="accordion">
         <input type="checkbox" name="collapse" id="handle3">
@@ -876,6 +876,10 @@ Parameters
             <li><span class="li-normal">params for cli_fmupdate_fdssetting_pushoverridetoclient_announceip:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">announce-ip</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_fmupdate_fdssetting_serveroverride:</span></li>
             <ul class="ul-self">
@@ -883,6 +887,10 @@ Parameters
             <li><span class="li-normal">params for cli_fmupdate_fdssetting_serveroverride_servlist:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">servlist</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_fmupdate_fdssetting_updateschedule:</span></li>
             <ul class="ul-self">
@@ -905,6 +913,10 @@ Parameters
             <li><span class="li-normal">params for cli_fmupdate_serveraccesspriorities_privateserver:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">private-server</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_fmupdate_serveroverridestatus:</span></li>
             <ul class="ul-self">
@@ -921,6 +933,10 @@ Parameters
             <li><span class="li-normal">params for cli_fmupdate_webspam_fgdsetting_serveroverride_servlist:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">servlist</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_fmupdate_webspam_webproxy:</span></li>
             <ul class="ul-self">
@@ -931,43 +947,79 @@ Parameters
             <li><span class="li-normal">params for cli_system_admin_group:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">group</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_group_member:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">group</span></li>
                 <li><span class="li-normal">member</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_ldap:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ldap</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_ldap_adom:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">ldap</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_profile:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">profile</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_profile_datamaskcustomfields:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">datamask-custom-fields</span></li>
                 <li><span class="li-normal">profile</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_profile_writepasswdprofiles:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">profile</span></li>
                 <li><span class="li-normal">write-passwd-profiles</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_profile_writepasswduserlist:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">profile</span></li>
                 <li><span class="li-normal">write-passwd-user-list</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_radius:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">radius</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_setting:</span></li>
             <ul class="ul-self">
@@ -975,50 +1027,90 @@ Parameters
             <li><span class="li-normal">params for cli_system_admin_tacacs:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">tacacs</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_adom:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_adomexclude:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom-exclude</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_dashboard:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">dashboard</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_dashboardtabs:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">dashboard-tabs</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_metadata:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">meta-data</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_policyblock:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">policy-block</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_policypackage:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">policy-package</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_user_restrictdevvdom:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">restrict-dev-vdom</span></li>
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_alertconsole:</span></li>
             <ul class="ul-self">
@@ -1029,11 +1121,19 @@ Parameters
             <li><span class="li-normal">params for cli_system_alertevent:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">alert-event</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_alertevent_alertdestination:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">alert-destination</span></li>
                 <li><span class="li-normal">alert-event</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_autodelete:</span></li>
             <ul class="ul-self">
@@ -1059,14 +1159,26 @@ Parameters
             <li><span class="li-normal">params for cli_system_certificate_ca:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ca</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_certificate_crl:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">crl</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_certificate_local:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">local</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_certificate_oftp:</span></li>
             <ul class="ul-self">
@@ -1074,10 +1186,18 @@ Parameters
             <li><span class="li-normal">params for cli_system_certificate_remote:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">remote</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_certificate_ssh:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ssh</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_connector:</span></li>
             <ul class="ul-self">
@@ -1088,10 +1208,18 @@ Parameters
             <li><span class="li-normal">params for cli_system_csf_fabricconnector:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">fabric-connector</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_csf_trustedlist:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">trusted-list</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_dns:</span></li>
             <ul class="ul-self">
@@ -1120,18 +1248,34 @@ Parameters
             <li><span class="li-normal">params for cli_system_ha_peer:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">peer</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_ha_privatepeer:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">private-peer</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_ha_vip:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">vip</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_interface:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">interface</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_interface_ipv6:</span></li>
             <ul class="ul-self">
@@ -1141,14 +1285,26 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-normal">interface</span></li>
                 <li><span class="li-normal">member</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_localinpolicy:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">local-in-policy</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_localinpolicy6:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">local-in-policy6</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_locallog_disk_filter:</span></li>
             <ul class="ul-self">
@@ -1207,6 +1363,10 @@ Parameters
             <li><span class="li-normal">params for cli_system_log_devicedisable:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">device-disable</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_log_fospolicystats:</span></li>
             <ul class="ul-self">
@@ -1220,6 +1380,10 @@ Parameters
             <li><span class="li-normal">params for cli_system_log_maildomain:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">mail-domain</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_log_pcapfile:</span></li>
             <ul class="ul-self">
@@ -1230,10 +1394,18 @@ Parameters
             <li><span class="li-normal">params for cli_system_log_ratelimit_device:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">device</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_log_ratelimit_ratelimits:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ratelimits</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_log_settings:</span></li>
             <ul class="ul-self">
@@ -1256,16 +1428,28 @@ Parameters
             <li><span class="li-normal">params for cli_system_logfetch_clientprofile:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">client-profile</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logfetch_clientprofile_devicefilter:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">client-profile</span></li>
                 <li><span class="li-normal">device-filter</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logfetch_clientprofile_logfilter:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">client-profile</span></li>
                 <li><span class="li-normal">log-filter</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logfetch_serversettings:</span></li>
             <ul class="ul-self">
@@ -1273,26 +1457,46 @@ Parameters
             <li><span class="li-normal">params for cli_system_logforward:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">log-forward</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logforward_devicefilter:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">device-filter</span></li>
                 <li><span class="li-normal">log-forward</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logforward_logfieldexclusion:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">log-field-exclusion</span></li>
                 <li><span class="li-normal">log-forward</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logforward_logfilter:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">log-filter</span></li>
                 <li><span class="li-normal">log-forward</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logforward_logmaskingcustom:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">log-forward</span></li>
                 <li><span class="li-normal">log-masking-custom</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_logforwardservice:</span></li>
             <ul class="ul-self">
@@ -1300,10 +1504,18 @@ Parameters
             <li><span class="li-normal">params for cli_system_mail:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">mail</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_metadata_admins:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">admins</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_ntp:</span></li>
             <ul class="ul-self">
@@ -1311,6 +1523,10 @@ Parameters
             <li><span class="li-normal">params for cli_system_ntp_ntpserver:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ntpserver</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_passwordpolicy:</span></li>
             <ul class="ul-self">
@@ -1327,16 +1543,28 @@ Parameters
             <li><span class="li-normal">params for cli_system_report_group:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">group</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_report_group_chartalternative:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">chart-alternative</span></li>
                 <li><span class="li-normal">group</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_report_group_groupby:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">group</span></li>
                 <li><span class="li-normal">group-by</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_report_setting:</span></li>
             <ul class="ul-self">
@@ -1344,10 +1572,18 @@ Parameters
             <li><span class="li-normal">params for cli_system_route:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">route</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_route6:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">route6</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_saml:</span></li>
             <ul class="ul-self">
@@ -1355,28 +1591,52 @@ Parameters
             <li><span class="li-normal">params for cli_system_saml_fabricidp:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">fabric-idp</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_saml_serviceproviders:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">service-providers</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_sniffer:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">sniffer</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_snmp_community:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">community</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_snmp_community_hosts:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">community</span></li>
                 <li><span class="li-normal">hosts</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_snmp_community_hosts6:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">community</span></li>
                 <li><span class="li-normal">hosts6</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_snmp_sysinfo:</span></li>
             <ul class="ul-self">
@@ -1384,6 +1644,10 @@ Parameters
             <li><span class="li-normal">params for cli_system_snmp_user:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">user</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_socfabric:</span></li>
             <ul class="ul-self">
@@ -1391,6 +1655,10 @@ Parameters
             <li><span class="li-normal">params for cli_system_socfabric_trustedlist:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">trusted-list</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_sql:</span></li>
             <ul class="ul-self">
@@ -1398,18 +1666,34 @@ Parameters
             <li><span class="li-normal">params for cli_system_sql_customindex:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">custom-index</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_sql_customskipidx:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">custom-skipidx</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_sql_tsindexfield:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ts-index-field</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_sslciphersuites:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">ssl-cipher-suites</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_status:</span></li>
             <ul class="ul-self">
@@ -1417,6 +1701,10 @@ Parameters
             <li><span class="li-normal">params for cli_system_syslog:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">syslog</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_webproxy:</span></li>
             <ul class="ul-self">
@@ -1424,86 +1712,174 @@ Parameters
             <li><span class="li-normal">params for cli_system_workflow_approvalmatrix:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">approval-matrix</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_workflow_approvalmatrix_approver:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">approval-matrix</span></li>
                 <li><span class="li-normal">approver</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for dvmdb_adom:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">expand member (Optional)</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">meta fields (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for dvmdb_device:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">device</span></li>
+                <li><span class="li-normal">expand member (Optional)</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">meta fields (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for dvmdb_device_haslave:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">device</span></li>
                 <li><span class="li-normal">ha_slave</span></li>
+                <li><span class="li-normal">expand member (Optional)</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for dvmdb_device_vdom:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">device</span></li>
                 <li><span class="li-normal">vdom</span></li>
+                <li><span class="li-normal">expand member (Optional)</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">meta fields (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for dvmdb_folder:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">folder</span></li>
+                <li><span class="li-normal">expand member (Optional)</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for dvmdb_group:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">group</span></li>
+                <li><span class="li-normal">expand member (Optional)</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">meta fields (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alertfilter:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">alertid (Optional)</span></li>
+                <li><span class="li-normal">ruleid (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alertincident_stats:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timescale (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alertlogs:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">alertid (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">rulename (Optional)</span></li>
+                <li><span class="li-normal">time-order (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alertlogs_count:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">alertid (Optional)</span></li>
+                <li><span class="li-normal">rulename (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alerts:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alerts_count:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">group-by (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timescale (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
+                <li><span class="li-normal">type (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alerts_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">attachment (Optional)</span></li>
+                <li><span class="li-normal">data-format (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_alerts_extradetails:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">alertids (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_basichandlers_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">attachment (Optional)</span></li>
+                <li><span class="li-normal">data-format (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for eventmgmt_correlationhandlers_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">attachment (Optional)</span></li>
+                <li><span class="li-normal">data-format (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_enduseravatar:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">user (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_forticare_licinfo:</span></li>
             <ul class="ul-self">
@@ -1511,32 +1887,40 @@ Parameters
             </ul>
             <li><span class="li-normal">params for fazsys_language_fonts_export:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">font (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_language_fonts_list:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">font (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_language_translationfile_export:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">language (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_language_translationfile_list:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">language (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_lograte_history:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_monitor_logforwardstatus:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">id (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_monitor_system_performance_status:</span></li>
             <ul class="ul-self">
             </ul>
             <li><span class="li-normal">params for fazsys_storageinfo:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fazsys_storageinfohistory:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for fortiview_run:</span></li>
             <ul class="ul-self">
@@ -1547,26 +1931,46 @@ Parameters
             <li><span class="li-normal">params for incidentmgmt_attachments:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">attachtype (Optional)</span></li>
+                <li><span class="li-normal">incid (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for incidentmgmt_attachments_count:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">attachtype (Optional)</span></li>
+                <li><span class="li-normal">incid (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for incidentmgmt_epeuhistory:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">incid (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for incidentmgmt_incident_stats:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">stats-item (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for incidentmgmt_incidents:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">detail-level (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">incids (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for incidentmgmt_incidents_count:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">incids (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ioc_license_state:</span></li>
             <ul class="ul-self">
@@ -1582,23 +1986,47 @@ Parameters
             <li><span class="li-normal">params for logview_logfields:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">devtype (Optional)</span></li>
+                <li><span class="li-normal">logtype (Optional)</span></li>
+                <li><span class="li-normal">subtype (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for logview_logfiles_data:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">data-type (Optional)</span></li>
+                <li><span class="li-normal">devid (Optional)</span></li>
+                <li><span class="li-normal">filename (Optional)</span></li>
+                <li><span class="li-normal">length (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">vdom (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for logview_logfiles_search:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">case-sensitive (Optional)</span></li>
+                <li><span class="li-normal">devid (Optional)</span></li>
+                <li><span class="li-normal">filename (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">logtype (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">vdom (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for logview_logfiles_state:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">devid (Optional)</span></li>
+                <li><span class="li-normal">filename (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
+                <li><span class="li-normal">vdom (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for logview_logsearch:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">tid</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for logview_logsearch_count:</span></li>
             <ul class="ul-self">
@@ -1608,9 +2036,12 @@ Parameters
             <li><span class="li-normal">params for logview_logstats:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">device (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for logview_pcapfile:</span></li>
             <ul class="ul-self">
+                <li><span class="li-normal">key-data (Optional)</span></li>
+                <li><span class="li-normal">key-type (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_config_chart:</span></li>
             <ul class="ul-self">
@@ -1709,23 +2140,33 @@ Parameters
             <li><span class="li-normal">params for report_graphfile:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">file-name (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_graphfile_data:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">file-name (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_graphfile_list:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">file-name (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_reports_data:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">tid</span></li>
+                <li><span class="li-normal">data-type (Optional)</span></li>
+                <li><span class="li-normal">format (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_reports_state:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
+                <li><span class="li-normal">state (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
+                <li><span class="li-normal">title (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_run:</span></li>
             <ul class="ul-self">
@@ -1735,6 +2176,9 @@ Parameters
             <li><span class="li-normal">params for report_template_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">dev-type (Optional)</span></li>
+                <li><span class="li-normal">language (Optional)</span></li>
+                <li><span class="li-normal">title (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for report_template_language:</span></li>
             <ul class="ul-self">
@@ -1743,10 +2187,14 @@ Parameters
             <li><span class="li-normal">params for report_template_list:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">dev-type (Optional)</span></li>
+                <li><span class="li-normal">language (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_alert_indicator:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">alert-id (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_config_connectors:</span></li>
             <ul class="ul-self">
@@ -1765,40 +2213,75 @@ Parameters
             <li><span class="li-normal">params for soar_incident_indicator:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">incident-id (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_indicator:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_indicator_enrichment:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">enrichment_uuid</span></li>
+                <li><span class="li-normal">detail-level (Optional)</span></li>
+                <li><span class="li-normal">indicator-type (Optional)</span></li>
+                <li><span class="li-normal">indicator-uuid (Optional)</span></li>
+                <li><span class="li-normal">indicator-value (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_playbook_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">attachment (Optional)</span></li>
+                <li><span class="li-normal">data-format (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_playbook_monitor:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">instance-id (Optional)</span></li>
+                <li><span class="li-normal">playbook-uuid (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_playbook_run:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">instance-id (Optional)</span></li>
+                <li><span class="li-normal">playbook-uuid (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_playbook_runlog:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
                 <li><span class="li-normal">run-id</span></li>
+                <li><span class="li-normal">detail-on-error (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_subnet_export:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">data-format (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for soar_task_monitor:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">instance-id (Optional)</span></li>
+                <li><span class="li-normal">playbook-uuid (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for sys_ha_status:</span></li>
             <ul class="ul-self">
@@ -1809,46 +2292,98 @@ Parameters
             <li><span class="li-normal">params for task_task:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">task</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for task_task_history:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">history</span></li>
                 <li><span class="li-normal">task</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for task_task_line:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">line</span></li>
                 <li><span class="li-normal">task</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for task_task_line_history:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">history</span></li>
                 <li><span class="li-normal">line</span></li>
                 <li><span class="li-normal">task</span></li>
+                <li><span class="li-normal">fields (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">loadsub (Optional)</span></li>
+                <li><span class="li-normal">option (Optional)</span></li>
+                <li><span class="li-normal">range (Optional)</span></li>
+                <li><span class="li-normal">sortings (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ueba_endpoints:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">detail-level (Optional)</span></li>
+                <li><span class="li-normal">epids (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ueba_endpoints_stats:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">stats-item (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ueba_endpoints_vuln:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">detectby (Optional)</span></li>
+                <li><span class="li-normal">epids (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ueba_endusers:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">detail-level (Optional)</span></li>
+                <li><span class="li-normal">euids (Optional)</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">limit (Optional)</span></li>
+                <li><span class="li-normal">offset (Optional)</span></li>
+                <li><span class="li-normal">sort-by (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ueba_endusers_stats:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">stats-item (Optional)</span></li>
+                <li><span class="li-normal">time-range (Optional)</span></li>
+                <li><span class="li-normal">timezone (Optional)</span></li>
             </ul>
             <li><span class="li-normal">params for ueba_otview:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
+                <li><span class="li-normal">filter (Optional)</span></li>
+                <li><span class="li-normal">group-by (Optional)</span></li>
             </ul>
         </ul>
         </div>

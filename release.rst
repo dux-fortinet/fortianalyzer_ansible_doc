@@ -20,6 +20,7 @@ Bugfixes
 --------
 
 - Improved code logic, reduced redundant requests for system information.
+- Improved faz_fact document.
 - Improved readme document.
 
 New Modules

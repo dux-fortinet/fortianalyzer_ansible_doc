@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">adom</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">eventmgmt_alerts_ack</span> Acknowledge alert events. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">alertid</span> Alert IDs. <span class="li-normal">type: str</span> <span class="li-normal">elements: str</span> <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">alertid</span> Alert IDs. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.0.0</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
@@ -105,7 +105,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           eventmgmt_alerts_ack:
-            alertid: <value of string>
+            alertid: <list of string>
             update_by: <value of string>
   
 

@@ -128,7 +128,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           dataset_name: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_dataset_variable:
             var: <value of string>
             var_expression: <value of string>

@@ -128,7 +128,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           chart_name: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_chart_drilldowntable:
             chart: <value of string>
             flag: <value in [enable, disable]>

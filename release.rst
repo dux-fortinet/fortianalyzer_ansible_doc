@@ -1,6 +1,26 @@
 Release Notes
 ==============================
 
+Release Galaxy 1.8.1
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Supported FortiAnalyzer 7.2.9, 7.2.10, 7.4.6, 7.6.2
+
+Bugfixes
+--------
+
+- Corrected the mainkey of some "eventmgmt" modules.
+
+|
+
 Release Galaxy 1.8.0
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -12,9 +32,8 @@ FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
 Minor Changes
 -------------
 
-- Added 20 eventmgmt modules.
+- Added 16 eventmgmt modules.
 - Supported FortiAnalyzer 6.2.13, 6.4.15, 7.0.13, 7.2.8, 7.4.4, 7.4.5, 7.6.1 API schemas.
-
 
 Bugfixes
 --------
@@ -36,14 +55,10 @@ New Modules
 - fortinet.fortianalyzer.faz_eventmgmt_config_dataselector - Config data-selector.
 - fortinet.fortianalyzer.faz_eventmgmt_config_notificationprofile - Config notification-profile.
 - fortinet.fortianalyzer.faz_eventmgmt_config_trigger - trigger
-- fortinet.fortianalyzer.faz_eventmgmt_config_trigger_addressfilter - address-filter
 - fortinet.fortianalyzer.faz_eventmgmt_config_trigger_device - device
-- fortinet.fortianalyzer.faz_eventmgmt_config_trigger_fabricconnector - fabric-connector
 - fortinet.fortianalyzer.faz_eventmgmt_config_trigger_filter - filter
 - fortinet.fortianalyzer.faz_eventmgmt_config_trigger_filter_rule - rule
 - fortinet.fortianalyzer.faz_eventmgmt_correlationhandlers_import - Import correlation handlers.
-- fortinet.fortianalyzer.faz_eventmgmt_mitreattackmatrix - Get Mitre Attack matrix.
-- fortinet.fortianalyzer.faz_eventmgmt_mitreattackmatrix_technique - Get Mitre Attack matrix by technique id
 
 
 Release Galaxy 1.7.0

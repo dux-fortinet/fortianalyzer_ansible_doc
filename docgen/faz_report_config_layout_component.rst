@@ -352,7 +352,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           layout_id: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_layout_component:
             component_id: <value of integer>
             type: <value in [graphic, column-break, macro, ...]>

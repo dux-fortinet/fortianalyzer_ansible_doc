@@ -184,7 +184,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_basichandler:
             content_pack_id: <value of string>
             content_pack_uuid: <value of string>

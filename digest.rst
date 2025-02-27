@@ -1286,21 +1286,21 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_basichandler.html">faz_eventmgmt_config_basichandler</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">handler_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/basic-handler<br>/eventmgmt/adom/{adom}/config/basic-handler/{basic-handler}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_correlationhandler.html">faz_eventmgmt_config_correlationhandler</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">handler_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/correlation-handler<br>/eventmgmt/adom/{adom}/config/correlation-handler/{correlation-handler}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_dataselector.html">faz_eventmgmt_config_dataselector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">selector_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/data-selector<br>/eventmgmt/adom/{adom}/config/data-selector/{data-selector}</td>
   </tr>
   <tr class="row-even">
@@ -1318,25 +1318,11 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td>/eventmgmt/adom/{adom}/config/trigger<br>/eventmgmt/adom/{adom}/config/trigger/{trigger}</td>
   </tr>
   <tr class="row-even">
-  <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_addressfilter.html">faz_eventmgmt_config_trigger_addressfilter</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
-  <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/address-filter<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/address-filter/{address-filter}</td>
-  </tr>
-  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_device.html">faz_eventmgmt_config_trigger_device</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/device<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/device/{device}</td>
-  </tr>
-  <tr class="row-even">
-  <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_fabricconnector.html">faz_eventmgmt_config_trigger_fabricconnector</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
-  <td>None</td>
-  <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/fabric-connector<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/fabric-connector/{fabric-connector}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_filter.html">faz_eventmgmt_config_trigger_filter</a></td>
@@ -1349,7 +1335,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_filter_rule.html">faz_eventmgmt_config_trigger_filter_rule</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">filter_id</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">profile_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/filter/{filter_id}/rule<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/filter/{filter_id}/rule/{rule}</td>
   </tr>
   <tr class="row-odd">
@@ -1358,20 +1344,6 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
   <td>None</td>
   <td>/eventmgmt/adom/{adom}/correlation-handlers/import</td>
-  </tr>
-  <tr class="row-even">
-  <td><a class="reference external" href="docgen/faz_eventmgmt_mitreattackmatrix.html">faz_eventmgmt_mitreattackmatrix</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td>None</td>
-  <td>/eventmgmt/adom/{adom}/mitre-attack-matrix</td>
-  </tr>
-  <tr class="row-odd">
-  <td><a class="reference external" href="docgen/faz_eventmgmt_mitreattackmatrix_technique.html">faz_eventmgmt_mitreattackmatrix_technique</a></td>
-  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">techid</span></code></td>
-  <td>None</td>
-  <td>/eventmgmt/mitre-attack-matrix/technique/{techid}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="faz_fact.html">faz_fact</a></td>

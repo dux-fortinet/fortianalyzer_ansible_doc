@@ -159,7 +159,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_notificationprofile:
             fabric_connector: <value of dict>
             name: <value of string>

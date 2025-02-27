@@ -113,7 +113,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           schedule_name: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_schedule_addressfilter:
             id: <value of integer>
             include_option: <value of string>

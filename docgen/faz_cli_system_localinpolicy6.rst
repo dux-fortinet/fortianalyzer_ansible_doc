@@ -129,7 +129,7 @@ Examples
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           cli_system_localinpolicy6:
             action: <value in [drop, reject, accept]>
             dport: <value of integer>

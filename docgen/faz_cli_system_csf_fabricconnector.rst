@@ -109,7 +109,7 @@ Examples
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           cli_system_csf_fabricconnector:
             accprofile: <value of string>
             configuration_write_access: <value in [disable, enable]>

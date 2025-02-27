@@ -114,7 +114,7 @@ Examples
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           cli_system_ha_vip:
             id: <value of integer>
             status: <value in [disable, enable]>

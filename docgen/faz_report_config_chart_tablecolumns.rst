@@ -153,7 +153,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           chart_name: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_chart_tablecolumns:
             data_type: <value in [aggregate, raw, drilldown]>
             header: <value of string>

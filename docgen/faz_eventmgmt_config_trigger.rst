@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">eventmgmt_config_trigger</span> trigger <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">eventmgmt_config_trigger</span> Trigger <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">address_filter</span> reference: /eventmgmt/adom/&lt;adom-name&gt;/config/trigger/&lt;trigger_id&gt;/address-filter <span class="li-normal">type: list of dict</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -499,13 +499,13 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: trigger
+      - name: Trigger
         fortinet.fortianalyzer.faz_eventmgmt_config_trigger:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_trigger:
             address_filter:
               - id: <value of integer>

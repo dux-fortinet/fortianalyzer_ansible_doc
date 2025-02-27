@@ -518,19 +518,19 @@ Parameters
         <li><span class="li-normal">params for eventmgmt_config_basichandler:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>handler_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_basichandler.html#parameters">faz_eventmgmt_config_basichandler</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_correlationhandler:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>handler_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_correlationhandler.html#parameters">faz_eventmgmt_config_correlationhandler</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_dataselector:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>selector_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_dataselector.html#parameters">faz_eventmgmt_config_dataselector</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_notificationprofile:</span></li>
@@ -544,12 +544,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger.html#parameters">faz_eventmgmt_config_trigger</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for eventmgmt_config_trigger_addressfilter:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger_addressfilter.html#parameters">faz_eventmgmt_config_trigger_addressfilter</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_trigger_device:</span></li>
         <ul class="ul-self">
@@ -566,7 +560,7 @@ Parameters
         <li><span class="li-normal">params for eventmgmt_config_trigger_filter_rule:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>profile_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger_filter_rule.html#parameters">faz_eventmgmt_config_trigger_filter_rule</a> </span></li>
         </ul>
         <li><span class="li-normal">params for report_config_chart:</span></li>
@@ -945,9 +939,6 @@ Parameters
             <span class="li-normal">>= 7.2.2</span>
         </li>
         <li><span class="li-required">eventmgmt_config_trigger</span> - available versions:
-            <span class="li-normal">6.2.1-7.2.1</span>
-        </li>
-        <li><span class="li-required">eventmgmt_config_trigger_addressfilter</span> - available versions:
             <span class="li-normal">6.2.1-7.2.1</span>
         </li>
         <li><span class="li-required">eventmgmt_config_trigger_device</span> - available versions:
@@ -1392,12 +1383,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">trigger</span></li>
-        </ul>
-        <li><span class="li-normal">params for eventmgmt_config_trigger_addressfilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">address-filter</span></li>
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">trigger_id</span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_trigger_device:</span></li>
         <ul class="ul-self">

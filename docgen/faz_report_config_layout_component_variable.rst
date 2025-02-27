@@ -145,7 +145,7 @@ Examples
           adom: <your own value>
           component_id: <your own value>
           layout_id: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_layout_component_variable:
             not: <value in [enable, disable]>
             var: <value of string>

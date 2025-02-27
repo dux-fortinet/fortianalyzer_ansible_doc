@@ -101,7 +101,7 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           user: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           cli_system_admin_user_policyblock:
             policy_block_name: <value of string>
   

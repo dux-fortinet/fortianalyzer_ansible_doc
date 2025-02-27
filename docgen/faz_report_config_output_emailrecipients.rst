@@ -113,7 +113,7 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           output_name: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           report_config_output_emailrecipients:
             address: <value of string>
             email_from: <value of string>

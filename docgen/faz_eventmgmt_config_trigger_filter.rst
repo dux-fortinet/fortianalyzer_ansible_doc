@@ -231,6 +231,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -246,34 +247,34 @@ Examples
           trigger_id: <your own value>
           state: present # <value in [present, absent]>
           eventmgmt_config_trigger_filter:
-            dev_type: <any type of data>
-            id: <value of integer>
-            rule:
-              - id: <value of integer>
-                key: <value of string>
-                value: <value of string>
-                value_type: <value of integer>
-                oper: <value in [less-than, not-contain, less-or-equal, ...]>
-            subject: <value of string>
-            tag: <value of string>
-            enable: <value in [enable, disable]>
-            eventstatus: <value of string>
-            eventtype: <value of string>
-            extrainfo: <value of string>
-            extrainfo_type: <value in [default, custom]>
-            filter_expr: <value of string>
-            groupby1: <value of string>
-            groupby2: <value of string>
-            logtype: <value of string>
-            rule_relation: <value of integer>
-            severity: <value in [high, medium, critical, ...]>
-            thres_count: <value of integer>
-            thres_duration: <value of integer>
-            utmevent: <value of string>
-            indicator:
-              - count: <value of integer>
-                name: <value of string>
-                type: <value of string>
+            id: 0 # Required variable, integer
+            # dev_type: <any type of data>
+            # rule:
+            #   - id: <value of integer>
+            #     key: <value of string>
+            #     value: <value of string>
+            #     value_type: <value of integer>
+            #     oper: <value in [less-than, not-contain, less-or-equal, ...]>
+            # subject: <value of string>
+            # tag: <value of string>
+            # enable: <value in [enable, disable]>
+            # eventstatus: <value of string>
+            # eventtype: <value of string>
+            # extrainfo: <value of string>
+            # extrainfo_type: <value in [default, custom]>
+            # filter_expr: <value of string>
+            # groupby1: <value of string>
+            # groupby2: <value of string>
+            # logtype: <value of string>
+            # rule_relation: <value of integer>
+            # severity: <value in [high, medium, critical, ...]>
+            # thres_count: <value of integer>
+            # thres_duration: <value of integer>
+            # utmevent: <value of string>
+            # indicator:
+            #   - count: <value of integer>
+            #     name: <value of string>
+            #     type: <value of string>
   
 
 

@@ -115,6 +115,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -130,12 +131,12 @@ Examples
           dataset_name: <your own value>
           state: present # <value in [present, absent]>
           report_config_dataset_variable:
-            var: <value of string>
-            var_expression: <value of string>
-            var_name: <value of string>
-            var_type: <value in [ip, integer, string, ...]>
-            drilldown_flag: <value in [enable, disable]>
-            var_array: <value in [enable, disable]>
+            var: "your value" # Required variable, string
+            # var_expression: <value of string>
+            # var_name: <value of string>
+            # var_type: <value in [ip, integer, string, ...]>
+            # drilldown_flag: <value in [enable, disable]>
+            # var_array: <value in [enable, disable]>
   
 
 

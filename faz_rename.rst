@@ -65,6 +65,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_fmupdate_fdssetting_serveroverride_servlist.html#parameters">faz_cli_fmupdate_fdssetting_serveroverride_servlist</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for cli_fmupdate_fgdsetting_serveroverride_servlist:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_fmupdate_fgdsetting_serveroverride_servlist.html#parameters">faz_cli_fmupdate_fgdsetting_serveroverride_servlist</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for cli_fmupdate_serveraccesspriorities_privateserver:</span></li>
         <ul class="ul-self">
             
@@ -286,6 +292,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_log_devicedisable.html#parameters">faz_cli_system_log_devicedisable</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for cli_system_log_deviceselector:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_log_deviceselector.html#parameters">faz_cli_system_log_deviceselector</a> </span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_log_maildomain:</span></li>
         <ul class="ul-self">
@@ -536,7 +548,7 @@ Parameters
         <li><span class="li-normal">params for eventmgmt_config_notificationprofile:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>profile_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_notificationprofile.html#parameters">faz_eventmgmt_config_notificationprofile</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_trigger:</span></li>
@@ -560,7 +572,7 @@ Parameters
         <li><span class="li-normal">params for eventmgmt_config_trigger_filter_rule:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>profile_id</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger_filter_rule.html#parameters">faz_eventmgmt_config_trigger_filter_rule</a> </span></li>
         </ul>
         <li><span class="li-normal">params for report_config_chart:</span></li>
@@ -701,11 +713,14 @@ Parameters
         <li><span class="li-required">cli_fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
+        <li><span class="li-required">cli_fmupdate_fgdsetting_serveroverride_servlist</span> - available versions:
+            <span class="li-normal">>= 7.6.3</span>
+        </li>
         <li><span class="li-required">cli_fmupdate_serveraccesspriorities_privateserver</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">cli_fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
-            <span class="li-normal">>= 6.2.1</span>
+            <span class="li-normal">6.2.1-7.6.2</span>
         </li>
         <li><span class="li-required">cli_system_admin_group</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
@@ -810,7 +825,10 @@ Parameters
             <span class="li-normal">>= 7.2.0</span>
         </li>
         <li><span class="li-required">cli_system_log_devicedisable</span> - available versions:
-            <span class="li-normal">>= 6.4.4</span>
+            <span class="li-normal">6.4.4-7.6.2</span>
+        </li>
+        <li><span class="li-required">cli_system_log_deviceselector</span> - available versions:
+            <span class="li-normal">>= 7.6.3</span>
         </li>
         <li><span class="li-required">cli_system_log_maildomain</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
@@ -1030,6 +1048,10 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">servlist</span></li>
         </ul>
+        <li><span class="li-normal">params for cli_fmupdate_fgdsetting_serveroverride_servlist:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">servlist</span></li>
+        </ul>
         <li><span class="li-normal">params for cli_fmupdate_serveraccesspriorities_privateserver:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">private-server</span></li>
@@ -1191,6 +1213,10 @@ Parameters
         <li><span class="li-normal">params for cli_system_log_devicedisable:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">device-disable</span></li>
+        </ul>
+        <li><span class="li-normal">params for cli_system_log_deviceselector:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">device-selector</span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_log_maildomain:</span></li>
         <ul class="ul-self">

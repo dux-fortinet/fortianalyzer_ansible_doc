@@ -97,6 +97,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -109,9 +110,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           cli_system_log_ueba:
-            ip_only_ep: <value in [disable, enable]>
-            ip_unique_scope: <value in [adom, vdom]>
-            hostname_ep_unifier: <value in [disable, enable]>
+            # ip_only_ep: <value in [disable, enable]>
+            # ip_unique_scope: <value in [adom, vdom]>
+            # hostname_ep_unifier: <value in [disable, enable]>
   
 
 

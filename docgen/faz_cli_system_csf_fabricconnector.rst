@@ -98,6 +98,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -111,9 +112,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           cli_system_csf_fabricconnector:
-            accprofile: <value of string>
-            configuration_write_access: <value in [disable, enable]>
-            serial: <value of string>
+            serial: "your value" # Required variable, string
+            # accprofile: <value of string>
+            # configuration_write_access: <value in [disable, enable]>
   
 
 

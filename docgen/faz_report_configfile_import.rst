@@ -92,6 +92,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -105,8 +106,8 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           report_configfile_import:
-            data: <value of string>
-            folder: <value of string>
+            # data: <value of string>
+            # folder: <value of string>
   
 
 

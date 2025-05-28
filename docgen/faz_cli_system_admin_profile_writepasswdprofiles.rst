@@ -89,6 +89,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -103,7 +104,7 @@ Examples
           profile: <your own value>
           state: present # <value in [present, absent]>
           cli_system_admin_profile_writepasswdprofiles:
-            profileid: <value of string>
+            profileid: "your value" # Required variable, string
   
 
 

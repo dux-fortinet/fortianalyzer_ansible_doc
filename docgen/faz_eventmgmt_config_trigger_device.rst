@@ -105,6 +105,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -120,10 +121,10 @@ Examples
           trigger_id: <your own value>
           state: present # <value in [present, absent]>
           eventmgmt_config_trigger_device:
-            id: <value of integer>
-            name: <value of string>
-            type: <any type of data>
-            vdom: <value of string>
+            id: 0 # Required variable, integer
+            # name: <value of string>
+            # type: <any type of data>
+            # vdom: <value of string>
   
 
 

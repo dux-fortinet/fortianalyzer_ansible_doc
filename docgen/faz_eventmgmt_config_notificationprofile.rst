@@ -147,6 +147,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -161,18 +162,18 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           eventmgmt_config_notificationprofile:
-            fabric_connector: <value of dict>
-            name: <value of string>
-            notify_bitmap: <value of integer>
-            profile_id: <value of string>
-            email_from: <value of string>
-            email_html_format: <value of integer>
-            email_subject: <value of string>
-            email_svr: <value of string>
-            email_to: <value of string>
-            snmp_community: <value of string>
-            snmpv3_user: <value of string>
-            syslog_svr: <value of string>
+            profile_id: "your value" # Required variable, string
+            # fabric_connector: <value of dict>
+            # name: <value of string>
+            # notify_bitmap: <value of integer>
+            # email_from: <value of string>
+            # email_html_format: <value of integer>
+            # email_subject: <value of string>
+            # email_svr: <value of string>
+            # email_to: <value of string>
+            # snmp_community: <value of string>
+            # snmpv3_user: <value of string>
+            # syslog_svr: <value of string>
   
 
 

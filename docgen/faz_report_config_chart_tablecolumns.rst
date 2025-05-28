@@ -140,6 +140,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -155,17 +156,17 @@ Examples
           chart_name: <your own value>
           state: present # <value in [present, absent]>
           report_config_chart_tablecolumns:
-            data_type: <value in [aggregate, raw, drilldown]>
-            header: <value of string>
-            id: <value of integer>
-            column_attr: <value in [app-id, email-recver, timespan, ...]>
-            column_graph_type: <value in [none, bar, line-down, ...]>
-            column_num: <value of integer>
-            column_span: <value of integer>
-            column_width: <value of integer>
-            data_binding: <value of string>
-            data_top: <value of integer>
-            legend: <value of string>
+            id: 0 # Required variable, integer
+            # data_type: <value in [aggregate, raw, drilldown]>
+            # header: <value of string>
+            # column_attr: <value in [app-id, email-recver, timespan, ...]>
+            # column_graph_type: <value in [none, bar, line-down, ...]>
+            # column_num: <value of integer>
+            # column_span: <value of integer>
+            # column_width: <value of integer>
+            # data_binding: <value of string>
+            # data_top: <value of integer>
+            # legend: <value of string>
   
 
 

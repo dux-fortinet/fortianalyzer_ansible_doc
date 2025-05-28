@@ -103,6 +103,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -116,10 +117,10 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           cli_system_ha_vip:
-            id: <value of integer>
-            status: <value in [disable, enable]>
-            vip: <value of string>
-            vip_interface: <value of string>
+            id: 0 # Required variable, integer
+            # status: <value in [disable, enable]>
+            # vip: <value of string>
+            # vip_interface: <value of string>
   
 
 

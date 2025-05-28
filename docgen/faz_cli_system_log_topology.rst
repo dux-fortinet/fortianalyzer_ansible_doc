@@ -92,6 +92,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -104,8 +105,8 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           cli_system_log_topology:
-            max_depth: <value of integer>
-            max_depth_share: <value of integer>
+            # max_depth: <value of integer>
+            # max_depth_share: <value of integer>
   
 
 

@@ -103,6 +103,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -116,10 +117,10 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           cli_system_log_ratelimit_ratelimits:
-            filter: <value of string>
-            filter_type: <value in [devid, adom]>
-            id: <value of integer>
-            ratelimit: <value of integer>
+            id: 0 # Required variable, integer
+            # filter: <value of string>
+            # filter_type: <value in [devid, adom]>
+            # ratelimit: <value of integer>
   
 
 

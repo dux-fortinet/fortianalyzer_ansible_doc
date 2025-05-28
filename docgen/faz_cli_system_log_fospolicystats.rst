@@ -97,6 +97,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -109,9 +110,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           cli_system_log_fospolicystats:
-            retention_days: <value of integer>
-            sampling_interval: <value of integer>
-            status: <value in [disable, enable]>
+            # retention_days: <value of integer>
+            # sampling_interval: <value of integer>
+            # status: <value in [disable, enable]>
   
 
 

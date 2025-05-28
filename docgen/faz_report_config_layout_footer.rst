@@ -105,6 +105,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -120,10 +121,10 @@ Examples
           layout_id: <your own value>
           state: present # <value in [present, absent]>
           report_config_layout_footer:
-            footer_id: <value of integer>
-            type: <value in [text, graphic, minicover]>
-            graphic: <value of string>
-            text: <value of string>
+            footer_id: 0 # Required variable, integer
+            # type: <value in [text, graphic, minicover]>
+            # graphic: <value of string>
+            # text: <value of string>
   
 
 

@@ -92,6 +92,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -105,8 +106,8 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           eventmgmt_alerts_ack:
-            alertid: <list of string>
-            update_by: <value of string>
+            # alertid: <list of string>
+            # update_by: <value of string>
   
 
 

@@ -104,6 +104,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -118,10 +119,10 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           report_config_layoutfolder:
-            folder_id: <value of integer>
-            parent_id: <value of integer>
-            folder_name: <value of string>
-            protected: <value in [enable, disable]>
+            folder_id: 0 # Required variable, integer
+            # parent_id: <value of integer>
+            # folder_name: <value of string>
+            # protected: <value in [enable, disable]>
   
 
 

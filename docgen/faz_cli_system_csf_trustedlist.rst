@@ -123,6 +123,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -136,14 +137,14 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           cli_system_csf_trustedlist:
-            action: <value in [accept, deny]>
-            authorization_type: <value in [serial, certificate]>
-            certificate: <value of string>
-            downstream_authorization: <value in [disable, enable]>
-            ha_members: <value of string>
-            index: <value of integer>
-            name: <value of string>
-            serial: <value of string>
+            name: "your value" # Required variable, string
+            # action: <value in [accept, deny]>
+            # authorization_type: <value in [serial, certificate]>
+            # certificate: <value of string>
+            # downstream_authorization: <value in [disable, enable]>
+            # ha_members: <value of string>
+            # index: <value of integer>
+            # serial: <value of string>
   
 
 

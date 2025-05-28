@@ -167,6 +167,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -181,22 +182,22 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           report_config_dataset:
-            description: <value of string>
-            dev_type: <value in [FortiSandbox, FortiWeb, Fabric, ...]>
-            name: <value of string>
-            variable:
-              - var: <value of string>
-                var_expression: <value of string>
-                var_name: <value of string>
-                var_type: <value in [ip, integer, string, ...]>
-                drilldown_flag: <value in [enable, disable]>
-                var_array: <value in [enable, disable]>
-            dev_drilldown: <value in [enable, disable]>
-            hcache: <value in [enable, disable]>
-            hidden: <value in [enable, disable]>
-            log_type: <value in [netscan, webfilter, event, ...]>
-            protected: <value in [enable, disable]>
-            query: <value of string>
+            name: "your value" # Required variable, string
+            # description: <value of string>
+            # dev_type: <value in [FortiSandbox, FortiWeb, Fabric, ...]>
+            # variable:
+            #   - var: <value of string>
+            #     var_expression: <value of string>
+            #     var_name: <value of string>
+            #     var_type: <value in [ip, integer, string, ...]>
+            #     drilldown_flag: <value in [enable, disable]>
+            #     var_array: <value in [enable, disable]>
+            # dev_drilldown: <value in [enable, disable]>
+            # hcache: <value in [enable, disable]>
+            # hidden: <value in [enable, disable]>
+            # log_type: <value in [netscan, webfilter, event, ...]>
+            # protected: <value in [enable, disable]>
+            # query: <value of string>
   
 
 

@@ -152,6 +152,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -164,20 +165,20 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           cli_fmupdate_fwmsetting_upgradetimeout:
-            check_status_timeout: <value of integer>
-            ctrl_check_status_timeout: <value of integer>
-            ctrl_put_image_by_fds_timeout: <value of integer>
-            ha_sync_timeout: <value of integer>
-            license_check_timeout: <value of integer>
-            prepare_image_timeout: <value of integer>
-            put_image_by_fds_timeout: <value of integer>
-            put_image_timeout: <value of integer>
-            reboot_of_fsck_timeout: <value of integer>
-            reboot_of_upgrade_timeout: <value of integer>
-            retrieve_timeout: <value of integer>
-            rpc_timeout: <value of integer>
-            total_timeout: <value of integer>
-            health_check_timeout: <value of integer>
+            # check_status_timeout: <value of integer>
+            # ctrl_check_status_timeout: <value of integer>
+            # ctrl_put_image_by_fds_timeout: <value of integer>
+            # ha_sync_timeout: <value of integer>
+            # license_check_timeout: <value of integer>
+            # prepare_image_timeout: <value of integer>
+            # put_image_by_fds_timeout: <value of integer>
+            # put_image_timeout: <value of integer>
+            # reboot_of_fsck_timeout: <value of integer>
+            # reboot_of_upgrade_timeout: <value of integer>
+            # retrieve_timeout: <value of integer>
+            # rpc_timeout: <value of integer>
+            # total_timeout: <value of integer>
+            # health_check_timeout: <value of integer>
   
 
 

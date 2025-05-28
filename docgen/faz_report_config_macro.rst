@@ -129,6 +129,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -143,15 +144,15 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           report_config_macro:
-            description: <value of string>
-            dev_type: <value in [FortiSandbox, FortiWeb, Fabric, ...]>
-            disp_name: <value of string>
-            name: <value of string>
-            data_attr: <value in [count, none, percent, ...]>
-            data_binding: <value of string>
-            dataset: <value of string>
-            protected: <value in [enable, disable]>
-            chart_style: <value of string>
+            name: "your value" # Required variable, string
+            # description: <value of string>
+            # dev_type: <value in [FortiSandbox, FortiWeb, Fabric, ...]>
+            # disp_name: <value of string>
+            # data_attr: <value in [count, none, percent, ...]>
+            # data_binding: <value of string>
+            # dataset: <value of string>
+            # protected: <value in [enable, disable]>
+            # chart_style: <value of string>
   
 
 

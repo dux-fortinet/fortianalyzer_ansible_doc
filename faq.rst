@@ -9,6 +9,7 @@ Frequently Asked Questions (FAQ)
  - `How To Monitor FortiAnalyzer Task?`_
  - `How To Use FortiAnalyzer Ansible without Providing Username and Password?`_
  - `How To Use FortiAnalyzer Ansible With FortiAnalyzer Cloud?`_
+ - `Error: The module fortinet.fortianalyzer.fortianalyzer_facts was not found in configured module paths`_
 
 |
 
@@ -63,11 +64,13 @@ How To Use FortiAnalyzer Ansible without Providing Username and Password?
 
 FortiAnalyzer Ansible collection supports three different ways to login.
 
-- Providing ansible_user and ansible_password.
-- Using access token.
-- Using the Forticloud access token (only for the FortiAnalyzer managed by Forticloud).
+1. Providing ansible_user and ansible_password.
+2. Using access token.
+3. Using the Forticloud access token (only for the FortiAnalyzer managed by Forticloud).
 
 To avoid unexpected behaviour, please only use one login method at a time.
+
+If both ansible_user and ansible_password and access token are provided, the ansible_user and ansible_password will be used.
 
 The access token login method is only valid for the latest versions of FortiAnalyzer v7.
 
@@ -171,6 +174,55 @@ then in subsequent tasks, we can reference returned token:
         var: result
 
 Access token usually expires in hours, you should always renew one in case of failure.
+
+
+
+Error: The module fortinet.fortianalyzer.fortianalyzer_facts was not found in configured module paths
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Solution 1: Please add "gather_facts: false" to your playbook to avoid this error.
+
+::
+
+  - name: Your task
+    hosts: fortianalyzers
+    connection: httpapi
+    gather_facts: false # add here
+    tasks:
+      - name: Get data from eventmgmt_alerts
+        fortinet.fortianalyzer.faz_fact:
+          facts:
+            selector: "eventmgmt_alerts"
+            params:
+              adom: "root"
+              limit: 1
+        register: response
+      - name: Display response
+        debug:
+          var: response
+
+
+Solution 2: Please make add vars "ansible_facts_modules: setup" to your playbook (or in the host file) to avoid this error.
+
+::
+
+  - name: Your task
+    hosts: fortianalyzers
+    connection: httpapi
+    vars:
+      ansible_facts_modules: setup # add here
+    tasks:
+      - name: Get data from eventmgmt_alerts
+        fortinet.fortianalyzer.faz_fact:
+          facts:
+            selector: "eventmgmt_alerts"
+            params:
+              adom: "root"
+              limit: 1
+        register: response
+      - name: Display response
+        debug:
+          var: response
 
 
 .. _fortiapi spec page: https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyzer/

@@ -119,6 +119,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -131,13 +132,13 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           um_image_upgrade_ext:
-            create_task: <value of string>
-            device:
-              - name: <value of string>
-                vdom: <value of string>
-            flags: <value in [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, ...]>
-            image: <value of string>
-            schedule_time: <value of string>
+            # create_task: <value of string>
+            # device:
+            #   - name: <value of string>
+            #     vdom: <value of string>
+            # flags: <value in [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, ...]>
+            # image: <value of string>
+            # schedule_time: <value of string>
   
 
 

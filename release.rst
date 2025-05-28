@@ -1,6 +1,37 @@
 Release Notes
 ==============================
 
+Release Galaxy 1.9.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Supported FortiAnalyzer 7.6.3. 4 new modules.
+
+Bugfixes
+--------
+
+- Added "gather_facts" to all example playbooks.
+- Fixed a BUG that occurred when username/password and access token were used at the same time.
+
+New Modules
+-----------
+
+- fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting - Cli fmupdate fgd setting
+- fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting_serveroverride - Cli fmupdate fgd setting server override
+- fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting_serveroverride_servlist - Cli fmupdate fgd setting server override servlist
+- fortinet.fortianalyzer.faz_cli_system_log_deviceselector - Cli system log device selector
+
+
+|
+
+
 Release Galaxy 1.8.1
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -18,6 +49,7 @@ Bugfixes
 --------
 
 - Corrected the mainkey of some "eventmgmt" modules.
+- Modified example playbooks to support ansible-lint check.
 
 |
 

@@ -93,6 +93,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -106,8 +107,8 @@ Examples
           # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           cli_system_socfabric_trustedlist:
-            id: <value of integer>
-            serial: <value of string>
+            id: 0 # Required variable, integer
+            # serial: <value of string>
   
 
 

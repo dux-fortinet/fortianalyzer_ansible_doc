@@ -110,6 +110,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -125,11 +126,11 @@ Examples
           schedule_name: <your own value>
           state: present # <value in [present, absent]>
           report_config_schedule_filter:
-            description: <value of string>
-            name: <value of string>
-            opcode: <value in [not_equal, equal]>
-            status: <value of integer>
-            value: <value of string>
+            name: "your value" # Required variable, string
+            # description: <value of string>
+            # opcode: <value in [not_equal, equal]>
+            # status: <value of integer>
+            # value: <value of string>
   
 
 

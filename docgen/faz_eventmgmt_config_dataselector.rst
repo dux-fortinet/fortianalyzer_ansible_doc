@@ -128,6 +128,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -142,13 +143,13 @@ Examples
           adom: <your own value>
           state: present # <value in [present, absent]>
           eventmgmt_config_dataselector:
-            address_filter: <value of dict>
-            device: <value of dict>
-            device_specify: <any type of data>
-            name: <value of string>
-            rule: <value of dict>
-            selector_id: <value of string>
-            subnet_scope: <value in [both, source, destination]>
+            selector_id: "your value" # Required variable, string
+            # address_filter: <value of dict>
+            # device: <value of dict>
+            # device_specify: <any type of data>
+            # name: <value of string>
+            # rule: <value of dict>
+            # subnet_scope: <value in [both, source, destination]>
   
 
 

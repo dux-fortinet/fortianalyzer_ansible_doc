@@ -263,6 +263,7 @@ Examples
   - name: Example playbook
     hosts: fortianalyzers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
@@ -275,41 +276,41 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           cli_system_csf:
-            accept_auth_by_cert: <value in [disable, enable]>
-            authorization_request_type: <value in [certificate, serial]>
-            certificate: <value of string>
-            configuration_sync: <value in [default, local]>
-            downstream_access: <value in [disable, enable]>
-            downstream_accprofile: <value of string>
-            fabric_connector:
-              - accprofile: <value of string>
-                configuration_write_access: <value in [disable, enable]>
-                serial: <value of string>
-            fabric_object_unification: <value in [local, default]>
-            fabric_workers: <value of integer>
-            file_mgmt: <value in [disable, enable]>
-            file_quota: <value of integer>
-            file_quota_warning: <value of integer>
-            fixed_key: <value of string>
-            forticloud_account_enforcement: <value in [disable, enable]>
-            group_name: <value of string>
-            group_password: <value of string>
-            log_unification: <value in [disable, enable]>
-            saml_configuration_sync: <value in [local, default]>
-            status: <value in [disable, enable]>
-            trusted_list:
-              - action: <value in [accept, deny]>
-                authorization_type: <value in [serial, certificate]>
-                certificate: <value of string>
-                downstream_authorization: <value in [disable, enable]>
-                ha_members: <value of string>
-                index: <value of integer>
-                name: <value of string>
-                serial: <value of string>
-            upstream: <value of string>
-            upstream_port: <value of integer>
-            ssl_protocol: <value in [follow-global-ssl-protocol, sslv3, tlsv1.0, ...]>
-            upstream_confirm: <value in [discover, confirm]>
+            # accept_auth_by_cert: <value in [disable, enable]>
+            # authorization_request_type: <value in [certificate, serial]>
+            # certificate: <value of string>
+            # configuration_sync: <value in [default, local]>
+            # downstream_access: <value in [disable, enable]>
+            # downstream_accprofile: <value of string>
+            # fabric_connector:
+            #   - accprofile: <value of string>
+            #     configuration_write_access: <value in [disable, enable]>
+            #     serial: <value of string>
+            # fabric_object_unification: <value in [local, default]>
+            # fabric_workers: <value of integer>
+            # file_mgmt: <value in [disable, enable]>
+            # file_quota: <value of integer>
+            # file_quota_warning: <value of integer>
+            # fixed_key: <value of string>
+            # forticloud_account_enforcement: <value in [disable, enable]>
+            # group_name: <value of string>
+            # group_password: <value of string>
+            # log_unification: <value in [disable, enable]>
+            # saml_configuration_sync: <value in [local, default]>
+            # status: <value in [disable, enable]>
+            # trusted_list:
+            #   - action: <value in [accept, deny]>
+            #     authorization_type: <value in [serial, certificate]>
+            #     certificate: <value of string>
+            #     downstream_authorization: <value in [disable, enable]>
+            #     ha_members: <value of string>
+            #     index: <value of integer>
+            #     name: <value of string>
+            #     serial: <value of string>
+            # upstream: <value of string>
+            # upstream_port: <value of integer>
+            # ssl_protocol: <value in [follow-global-ssl-protocol, sslv3, tlsv1.0, ...]>
+            # upstream_confirm: <value in [discover, confirm]>
   
 
 

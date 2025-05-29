@@ -9,7 +9,7 @@ Frequently Asked Questions (FAQ)
  - `How To Monitor FortiAnalyzer Task?`_
  - `How To Use FortiAnalyzer Ansible without Providing Username and Password?`_
  - `How To Use FortiAnalyzer Ansible With FortiAnalyzer Cloud?`_
- - `Error: The module fortinet.fortianalyzer.fortianalyzer_facts was not found in configured module paths`_
+ - `Error: No fact modules available and we could not find a fact module for your network OS`_
 
 |
 
@@ -177,19 +177,37 @@ Access token usually expires in hours, you should always renew one in case of fa
 
 
 
-Error: The module fortinet.fortianalyzer.fortianalyzer_facts was not found in configured module paths
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Error: No fact modules available and we could not find a fact module for your network OS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Solution 1: Please add "gather_facts: false" to your playbook to avoid this error.
+Solution 1 (Recommended): Add vars "ansible_facts_modules: setup" to the host file to avoid this error.
+`What is host file?`_
+
+::
+
+   [fortianalyzers]
+   fortianalyzer01 ansible_host=192.168.111.1 ansible_user="admin" ansible_password="password"
+   fortianalyzer02 ansible_host=192.168.111.2 ansible_user="admin" ansible_password="password"
+
+   [fortianalyzers:vars]
+   ansible_network_os=fortinet.fortianalyzer.fortianalyzer
+   ansible_facts_modules=setup  # add here
+   ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   ansible_httpapi_validate_certs=false
+
+
+Solution 2: Add vars "ansible_facts_modules: setup" to your playbook.
 
 ::
 
   - name: Your task
     hosts: fortianalyzers
     connection: httpapi
-    gather_facts: false # add here
+    vars:
+      ansible_facts_modules: setup # add here
     tasks:
-      - name: Get data from eventmgmt_alerts
+      - name: Your task
         fortinet.fortianalyzer.faz_fact:
           facts:
             selector: "eventmgmt_alerts"
@@ -202,17 +220,16 @@ Solution 1: Please add "gather_facts: false" to your playbook to avoid this erro
           var: response
 
 
-Solution 2: Please make add vars "ansible_facts_modules: setup" to your playbook (or in the host file) to avoid this error.
+Solution 3: Add "gather_facts: false" to your playbook.
 
 ::
 
   - name: Your task
     hosts: fortianalyzers
     connection: httpapi
-    vars:
-      ansible_facts_modules: setup # add here
+    gather_facts: false # add here
     tasks:
-      - name: Get data from eventmgmt_alerts
+      - name: Your task
         fortinet.fortianalyzer.faz_fact:
           facts:
             selector: "eventmgmt_alerts"
@@ -226,3 +243,4 @@ Solution 2: Please make add vars "ansible_facts_modules: setup" to your playbook
 
 
 .. _fortiapi spec page: https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyzer/
+.. _What is host file?: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html

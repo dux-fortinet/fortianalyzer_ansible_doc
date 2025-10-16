@@ -1,6 +1,38 @@
 Release Notes
 ==============================
 
+
+Release Galaxy 1.10.0
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Minor Changes
+-------------
+
+- Changed minimum required ansible-core version to 2.16.0;
+- Supported FortiAnalyzer 7.0.14, 7.2.11, 7.4.7, 7.4.8, 7.6.4. 8 new modules;
+
+Bugfixes
+--------
+
+- Changed the logic of getting FortiAnalyzer system information to prevent permission denied error;
+- Supported module_defaults. General variables can be specified in one place by using module_defaults;
+
+New Modules
+-----------
+
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy6_dport - Cli system local in policy6 dport
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy6_dst - Cli system local in policy6 dst
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy6_intf - Cli system local in policy6 intf
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy6_src - Cli system local in policy6 src
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy_dport - Cli system local in policy dport
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy_dst - Cli system local in policy dst
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy_intf - Cli system local in policy intf
+- fortinet.fortianalyzer.faz_cli_system_localinpolicy_src - Cli system local in policy src
+
+
+|
+
+
 Release Galaxy 1.9.0
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -12,7 +44,7 @@ FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
 Minor Changes
 -------------
 
-- Supported FortiAnalyzer 7.6.3. 4 new modules.
+- Supported FortiAnalyzer 7.6.3. 2 new modules.
 
 Bugfixes
 --------
@@ -24,8 +56,6 @@ New Modules
 -----------
 
 - fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting - Cli fmupdate fgd setting
-- fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting_serveroverride - Cli fmupdate fgd setting server override
-- fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting_serveroverride_servlist - Cli fmupdate fgd setting server override servlist
 - fortinet.fortianalyzer.faz_cli_system_log_deviceselector - Cli system log device selector
 
 

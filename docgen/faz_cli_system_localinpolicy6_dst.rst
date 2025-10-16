@@ -1,13 +1,13 @@
-:source: faz_cli_fmupdate_fgdsetting_serveroverride.py
+:source: faz_cli_system_localinpolicy6_dst.py
 
 :orphan:
 
-.. _faz_cli_fmupdate_fgdsetting_serveroverride:
+.. _faz_cli_system_localinpolicy6_dst:
 
-faz_cli_fmupdate_fgdsetting_serveroverride -- Cli fmupdate fgd setting server override
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_localinpolicy6_dst -- Cli system local in policy6 dst
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.9.0
+.. versionadded:: 1.10.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -35,14 +35,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
 
 
 
@@ -61,44 +61,13 @@ Parameters
  <li><span class="li-head">version_check</span> If set to True, it will check whether the parameters used are supported by the corresponding version of FortiAnazlyer locally based on FNDN data. A warning will be returned in version_check_warning if there is a mismatch. This warning is only a suggestion and may not be accurate. <span class="li-normal">type: bool</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
- <li><span class="li-head">cli_fmupdate_fgdsetting_serveroverride</span> Cli fmupdate fgd setting server override <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">local-in-policy6</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">cli_system_localinpolicy6_dst</span> Cli system local in policy6 dst <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">servlist</span> <span class="li-normal">type: list of dict</span>
- <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">src_ip</span> <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
- <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ip</span> <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ip6</span> <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">port</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">service_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgd, fsa, fgfq, geoip, iot-collect]</span>  <span class="li-normal">default: fgd</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- </ul>
- </li>
- <li><span class="li-head">status</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -127,19 +96,15 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: Cli fmupdate fgd setting server override
-        fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting_serveroverride:
+      - name: Cli system local in policy6 dst
+        fortinet.fortianalyzer.faz_cli_system_localinpolicy6_dst:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          cli_fmupdate_fgdsetting_serveroverride:
-            # servlist:
-            #   - id: <value of integer>
-            #     ip: <value of string>
-            #     ip6: <value of string>
-            #     port: <value of integer>
-            #     service_type: <value in [fgd, fsa, fgfq, ...]>
-            # status: <value in [disable, enable]>
+          local_in_policy6: <your own value>
+          state: present # <value in [present, absent]>
+          cli_system_localinpolicy6_dst:
+            # src_ip: <value of string>
   
 
 

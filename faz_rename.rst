@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 Parameters
@@ -64,12 +64,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_fmupdate_fdssetting_serveroverride_servlist.html#parameters">faz_cli_fmupdate_fdssetting_serveroverride_servlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for cli_fmupdate_fgdsetting_serveroverride_servlist:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_fmupdate_fgdsetting_serveroverride_servlist.html#parameters">faz_cli_fmupdate_fgdsetting_serveroverride_servlist</a> </span></li>
         </ul>
         <li><span class="li-normal">params for cli_fmupdate_serveraccesspriorities_privateserver:</span></li>
         <ul class="ul-self">
@@ -713,9 +707,6 @@ Parameters
         <li><span class="li-required">cli_fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
-        <li><span class="li-required">cli_fmupdate_fgdsetting_serveroverride_servlist</span> - available versions:
-            <span class="li-normal">>= 7.6.3</span>
-        </li>
         <li><span class="li-required">cli_fmupdate_serveraccesspriorities_privateserver</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
@@ -825,10 +816,10 @@ Parameters
             <span class="li-normal">>= 7.2.0</span>
         </li>
         <li><span class="li-required">cli_system_log_devicedisable</span> - available versions:
-            <span class="li-normal">6.4.4-7.6.2</span>
+            <span class="li-normal">6.4.4-7.4.6, 7.6.0-7.6.2</span>
         </li>
         <li><span class="li-required">cli_system_log_deviceselector</span> - available versions:
-            <span class="li-normal">>= 7.6.3</span>
+            <span class="li-normal">7.4.7-7.4.8, >= 7.6.3</span>
         </li>
         <li><span class="li-required">cli_system_log_maildomain</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
@@ -1045,10 +1036,6 @@ Parameters
             <li><span class="li-normal">announce-ip</span></li>
         </ul>
         <li><span class="li-normal">params for cli_fmupdate_fdssetting_serveroverride_servlist:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">servlist</span></li>
-        </ul>
-        <li><span class="li-normal">params for cli_fmupdate_fgdsetting_serveroverride_servlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">servlist</span></li>
         </ul>

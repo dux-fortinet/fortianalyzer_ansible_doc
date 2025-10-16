@@ -1,13 +1,13 @@
-:source: faz_cli_fmupdate_fgdsetting_serveroverride_servlist.py
+:source: faz_cli_system_localinpolicy6_intf.py
 
 :orphan:
 
-.. _faz_cli_fmupdate_fgdsetting_serveroverride_servlist:
+.. _faz_cli_system_localinpolicy6_intf:
 
-faz_cli_fmupdate_fgdsetting_serveroverride_servlist -- Cli fmupdate fgd setting server override servlist
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_localinpolicy6_intf -- Cli system local in policy6 intf
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.9.0
+.. versionadded:: 1.10.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -35,14 +35,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
 
 
 
@@ -62,31 +62,12 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">cli_fmupdate_fgdsetting_serveroverride_servlist</span> Cli fmupdate fgd setting server override servlist <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">local-in-policy6</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">cli_system_localinpolicy6_intf</span> Cli system local in policy6 intf <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">intf_name</span> <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ip</span> <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
- <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">ip6</span> <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">port</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">service_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgd, fsa, fgfq, geoip, iot-collect]</span>  <span class="li-normal">default: fgd</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -115,18 +96,15 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: Cli fmupdate fgd setting server override servlist
-        fortinet.fortianalyzer.faz_cli_fmupdate_fgdsetting_serveroverride_servlist:
+      - name: Cli system local in policy6 intf
+        fortinet.fortianalyzer.faz_cli_system_localinpolicy6_intf:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
+          local_in_policy6: <your own value>
           state: present # <value in [present, absent]>
-          cli_fmupdate_fgdsetting_serveroverride_servlist:
-            id: 0 # Required variable, integer
-            # ip: <value of string>
-            # ip6: <value of string>
-            # port: <value of integer>
-            # service_type: <value in [fgd, fsa, fgfq, ...]>
+          cli_system_localinpolicy6_intf:
+            # intf_name: <value of string>
   
 
 

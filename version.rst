@@ -37,7 +37,7 @@ FortiAnalyzer Galaxy Versions Mapping
 +---------------------+----------------+----------------------------------------------------------------------+
 | 1.9.0               | 2025/06/06     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.9.0``   |
 +---------------------+----------------+----------------------------------------------------------------------+
-| 1.10.0              | 2025/10/17     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.10.0``  |
+| 1.10.0              | 2025/10/22     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.10.0``  |
 +---------------------+----------------+----------------------------------------------------------------------+
 
 **Note**: Use ``-f`` option (i.e.

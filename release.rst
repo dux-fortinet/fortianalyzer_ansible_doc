@@ -9,6 +9,7 @@ Minor Changes
 -------------
 
 - Changed minimum required ansible-core version to 2.16.0;
+- Changed the logic of creating and updating report and eventmgmt objects;
 - Supported FortiAnalyzer 7.0.14, 7.2.11, 7.4.7, 7.4.8, 7.6.4. 8 new modules;
 
 Bugfixes
